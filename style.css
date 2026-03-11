@@ -1,0 +1,134 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #dcafff;
+  color: #1a0a4a;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* ширина скроллбара */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.15); /* трек — полупрозрачный фон */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #c477fe, #9d00ff); /* градиент для ползунка */
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.15); /* отступ вокруг */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ffeb00, #ff6fff); /* эффект наведения */
+}
+
+/* ==== Для Firefox ==== */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c477fe rgba(255,255,255,0.15);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #c477fe, #a14cff);
+  border-bottom: 2px solid #9d00ff;
+  padding: 12px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s, transform 0.2s;
+}
+
+header nav a:hover {
+  color: #ffeb00;
+  transform: scale(1.05);
+}
+
+main {
+  margin-top: 90px;
+  margin-bottom: 60px;
+  padding: 0 15px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 2.2em;
+  text-align: center;
+  color: #5a0d99;
+}
+
+h2 {
+  font-size: 1.6em;
+  color: #5a0d99;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #9d00ff;
+  padding-bottom: 5px;
+}
+
+section {
+  margin-bottom: 115px;
+  padding: 15px;
+  background-color: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+section p {
+  margin-bottom: 12px;
+}
+
+a {
+  color: #9d00ff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #0026ff;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #c477fe, #a14cff);
+  border-top: 2px solid #9d00ff;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 0.9em;
+  z-index: 1000;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  color: #ffeb00;
+}
