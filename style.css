@@ -215,3 +215,17 @@ figcaption {
   gap: 20px;
   margin-top: 30px;
 }
+
+.log {
+  background: rgba(255,255,255,0.15);
+  border-left: 4px solid #9d00ff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.log-date {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
